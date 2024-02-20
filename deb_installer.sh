@@ -1,7 +1,5 @@
 #! /usr/bin/bash
-sudo apt-get install dpkg
-sudo apt-get install figlet
-figlet Sh-bharat
+figlet CuerdOS Deb-Installer
 
 if [ -z $1 ]
 then
@@ -11,6 +9,7 @@ fi
 if [ -f $1 ]
 then
     sudo dpkg -i $1
+    sudo apt install -f -y
 
     echo "Thanks for Executing the Script."
 else
@@ -18,4 +17,3 @@ else
 fi
 
  
-
