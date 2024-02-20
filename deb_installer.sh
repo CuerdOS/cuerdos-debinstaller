@@ -1,5 +1,5 @@
 #! /usr/bin/bash
-figlet CuerdOS Deb-Installer
+figlet Debinstaller-sh
 
 if [ -z $1 ]
 then
